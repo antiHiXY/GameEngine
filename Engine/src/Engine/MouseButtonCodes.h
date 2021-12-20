@@ -1,0 +1,15 @@
+#pragma once
+
+// From glfw3.h
+#define ENGN_MOUSE_BUTTON_1         0
+#define ENGN_MOUSE_BUTTON_2         1
+#define ENGN_MOUSE_BUTTON_3         2
+#define ENGN_MOUSE_BUTTON_4         3
+#define ENGN_MOUSE_BUTTON_5         4
+#define ENGN_MOUSE_BUTTON_6         5
+#define ENGN_MOUSE_BUTTON_7         6
+#define ENGN_MOUSE_BUTTON_8         7
+#define ENGN_MOUSE_BUTTON_LAST      ENGN_MOUSE_BUTTON_8
+#define ENGN_MOUSE_BUTTON_LEFT      ENGN_MOUSE_BUTTON_1
+#define ENGN_MOUSE_BUTTON_RIGHT     ENGN_MOUSE_BUTTON_2
+#define ENGN_MOUSE_BUTTON_MIDDLE    ENGN_MOUSE_BUTTON_3 
