@@ -1,4 +1,4 @@
-#include <Engine.h>
+﻿#include <Engine.h>
 
 #include "imgui/imgui.h"
 
@@ -17,8 +17,8 @@ public:
 
 	virtual void OnImGuiRender() override
 	{
-		ImGui::Begin("Test");
-		ImGui::Text("Hello World");
+		ImGui::Begin("Window");
+		ImGui::Text("OHAYO!");
 		ImGui::End();
 	}
 
