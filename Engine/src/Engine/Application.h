@@ -5,19 +5,14 @@
 #include "Engine/Events/Event.h"
 #include "Engine/Events/ApplicationEvent.h"
 
+#include "Engine/Core/Timestep.h"
 #include "Engine/ImGui/ImGuiLayer.h"
-
-#include "Engine/Renderer/Shader.h"
-#include "Engine/Renderer/Buffer.h"
-#include "Engine/Renderer/VertexArray.h"
-
-#include "Engine/Renderer/OrthographicCamera.h"
 
 #include "Window.h"
 
 namespace Engine
 {
-    class ENGN_API Application
+    class Application
     {
     public:
         Application();
@@ -41,13 +36,7 @@ namespace Engine
         bool m_Running = true;
         LayerStack m_LayerStack;
 
-        std::shared_ptr<Shader> m_Shader;
-        std::shared_ptr<VertexArray> m_VertexArray;
-
-        std::shared_ptr<Shader> m_BlueShader;
-        std::shared_ptr<VertexArray> m_SquareVA;
-
-        OrthographicCamera m_Camera;
+        float m_LastFrameTime = 0.0f;
     private:
         static Application* s_Instance;
     };
